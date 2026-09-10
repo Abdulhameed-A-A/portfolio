@@ -1,8 +1,24 @@
 import Link from "next/link";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Adewunmi Abdulhameed",
+    jobTitle: "Software Engineer",
+    url: "https://stackola.vercel.app",
+    sameAs: [
+      "https://github.com/Abdulhameed-A-A",
+      "https://www.linkedin.com/in/abdulhameed-adewunmi/"
+    ]
+  };
+
   return (
     <main className="max-w-3xl mx-auto px-6 py-12 md:py-20 flex-1 w-full font-mono text-sm">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <nav className="flex justify-between items-center mb-24 text-xs tracking-wider">
         <div className="flex gap-6">
           <Link href="/" className="font-bold text-foreground">Home</Link>
