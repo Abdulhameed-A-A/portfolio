@@ -56,6 +56,17 @@ export default function Home() {
             <li>Integrated Supabase database & REST API endpoints for seamless authentication, search filtering, and state persistence.</li>
           </ul>
         </div>
+
+        <div>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+            <h4 className="font-bold">Cowrywise Ambassador <span className="font-normal text-foreground/60">@ Cowrywise</span></h4>
+            <span className="text-foreground/60 text-xs mt-1 sm:mt-0">Jun 2024 — Present</span>
+          </div>
+          <ul className="list-disc list-outside ml-4 space-y-2 text-foreground/80 leading-relaxed">
+            <li>Promoted financial literacy and represented Cowrywise on campus to drive student engagement.</li>
+            <li>Collaborated with a network of ambassadors to organize campaigns and onboard new users to the platform.</li>
+          </ul>
+        </div>
       </section>
 
       <hr className="border-foreground/10 my-12" />
@@ -112,13 +123,50 @@ export default function Home() {
 
       <hr className="border-foreground/10 my-12" />
 
+      {/* Additional School Projects Section */}
+      <section className="mb-12">
+        <h3 className="text-xs font-bold tracking-widest uppercase mb-8">Additional School Projects</h3>
+        
+        <div className="space-y-8">
+          <div>
+            <div className="flex justify-between items-baseline mb-2">
+              <h4 className="font-bold">Agent Based Traffic Signal Control System (MAS)</h4>
+              <Link href="https://github.com/Abdulhameed-A-A/traffic-mas" target="_blank" className="underline underline-offset-4 text-foreground/60 hover:text-foreground text-xs">GitHub</Link>
+            </div>
+            <p className="text-xs text-foreground/60 mb-4">Group Leader</p>
+            <ul className="list-disc list-outside ml-4 space-y-2 text-foreground/80 leading-relaxed">
+              <li>Led a team to develop a Multi Agent System (MAS) for coordinated traffic signal control of a five-junction arterial corridor using TraCI perception logic and Kuramoto coupled oscillator mathematics.</li>
+              <li>Engineered a fully integrated dashboard for monitoring simulation metrics, agent decisions, and green wave coordination in real time.</li>
+              <li>Implemented and evaluated distinct control modes (independent, cooperative, coordinated, collective) incorporating storage offers, platoon handoffs, and a bid/decline negotiation protocol over contested green time.</li>
+              <li>Achieved significant performance improvements in the collective mode compared to independent agents, including 43% lower wait time and 3.9% more vehicles served, demonstrating the value of inter-agent information sharing.</li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-baseline mb-2">
+              <h4 className="font-bold">Smart Campus Transport (IoT RFID System)</h4>
+              <Link href="https://smart-campus-opal.vercel.app/login" target="_blank" className="underline underline-offset-4 text-foreground/60 hover:text-foreground text-xs">Live Link</Link>
+            </div>
+            <p className="text-xs text-foreground/60 mb-4">Frontend Developer & Hardware Integration</p>
+            <ul className="list-disc list-outside ml-4 space-y-2 text-foreground/80 leading-relaxed">
+              <li>Built the frontend architecture for an IoT based RFID bus card reader system, implementing secure JWT session management with custom token refresh flows and real time data polling.</li>
+              <li>Developed strict state handling for financial transactions and journey tracking, ensuring accurate representation of integer-based currency data from the backend APIs without relying on silent client-side assumptions.</li>
+              <li>Strictly separated complex backend enums for travel state (e.g., IN_PROGRESS, REVIEW_REQUIRED) and financial state (PENDING, SUCCESS) into intuitive UI indicators.</li>
+              <li>Engineered resilient UI workflows to synchronize with the physical RFID hardware, gracefully handling edge cases like lost card deactivation, missing tap-outs, network failures, and loading states.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr className="border-foreground/10 my-12" />
+
       {/* Education */}
       <section className="mb-12">
         <div>
           <h3 className="text-xs font-bold tracking-widest uppercase mb-8">Education</h3>
           <div className="mb-2 flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
             <h4 className="font-bold">Obafemi Awolowo University</h4>
-            <span className="text-foreground/60 text-xs mt-1 sm:mt-0">Expected 2028</span>
+            <span className="text-foreground/60 text-xs mt-1 sm:mt-0">Expected March 2028</span>
           </div>
           <div className="text-foreground/80 mb-2">
             B.Sc. Computer Engineering <span className="text-foreground/60">| Ile-Ife, Nigeria</span>
