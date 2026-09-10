@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: "Portfolio of Adewunmi Abdulhameed, Frontend Developer and Software Engineer specializing in high-performance web applications and systems programming.",
   },
   verification: {
-    google: "MP_MYWqWSR0KQEE7xOgViS4bA8Pq9dCuiQ",
+    google: "MP_MYWqWSR0KQEE7xOgViS4bA8Pq9dCuiQm0CvT2U6Q",
   },
 };
 
